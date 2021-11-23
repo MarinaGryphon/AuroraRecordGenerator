@@ -22,13 +22,11 @@ namespace AuroraRecordGenerator
 		Unathi,
 
 		[ProtoEnum]
-		Vaurca,
-
-		[ProtoEnum]
-		Diona,
+		Vulpkanin,
 
 		[ProtoEnum]
 		IPC
+
 	}
 
 	[ProtoContract]
@@ -37,44 +35,23 @@ namespace AuroraRecordGenerator
 		[ProtoEnum, SubspeciesMeta(SpeciesType.None, "N/A")]
 		None = 0,
 
-		[ProtoEnum, SubspeciesMeta(SpeciesType.Tajara, "M'sai", "Ethnicity")]
-		MsaiTajara,
+		[ProtoEnum, SubspeciesMeta(SpeciesType.Unathi, "Yeosa'Unathi", "Ethnicity")]
+		YeosaUnathi,
 
-		[ProtoEnum, SubspeciesMeta(SpeciesType.Tajara, "Zhan-Khazan", "Ethnicity")]
-		ZhanTajara,
+		[ProtoEnum, SubspeciesMeta(SpeciesType.Unathi, "Ahat'Unathi", "Ethnicity")]
+		AhatUnathi,
 
-		[ProtoEnum, SubspeciesMeta(SpeciesType.Vaurca, "Type A (Worker)", "Classification")]
-		VaurcaWorker,
+		[ProtoEnum, SubspeciesMeta(SpeciesType.Unathi, "Sundar'Unathi", "Ethnicity")]
+		SundarUnathi,
 
-		[ProtoEnum, SubspeciesMeta(SpeciesType.Vaurca, "Type B (Warrior)", "Classification")]
-		VaurcaWarrior,
+		[ProtoEnum, SubspeciesMeta(SpeciesType.Unathi, "Tzeg'Unathi", "Ethnicity")]
+		TzegUnathi,
 
-		[ProtoEnum, SubspeciesMeta(SpeciesType.IPC, "Shell", "Model")]
-		IpcShell,
+		[ProtoEnum, SubspeciesMeta(SpeciesType.Unathi, "Hrad'Unathi", "Ethnicity")]
+		HradUnathi,
 
-		[ProtoEnum, SubspeciesMeta(SpeciesType.IPC, "Hephaestus G1 Heavy", "Model")]
-		IpcG1Industrial,
-
-        [ProtoEnum, SubspeciesMeta(SpeciesType.IPC, "Hephaestus G2 Heavy", "Model")]
-        IpcG2Industrial,
-
-        [ProtoEnum, SubspeciesMeta(SpeciesType.IPC, "Bishop Accessory", "Model")]
-        IpcFancy,
-
-        [ProtoEnum, SubspeciesMeta(SpeciesType.IPC, "Zeng-Hu Mobility", "Model")]
-        IpcMedsci,
-
-        [ProtoEnum, SubspeciesMeta(SpeciesType.IPC, "Shell", "Model")]
-        IpcHumanoid,
-
-        [ProtoEnum, SubspeciesMeta(SpeciesType.IPC, "Xion Industrial", "Model")]
-        IpcHeavy,
-
-        [ProtoEnum, SubspeciesMeta(SpeciesType.Unathi, "Aut'akh", "Variant")]
-        UnathiRobot,
-
-        [ProtoEnum, SubspeciesMeta(SpeciesType.Human, "Offworlder", "Variant")]
-        HumanOffworld
+		[ProtoEnum, SubspeciesMeta(SpeciesType.Unathi, "Lessik'Unathi", "Ethnicity")]
+		LessikUnathi
 	}
 
 	[ProtoContract]
@@ -95,7 +72,7 @@ namespace AuroraRecordGenerator
 		/// <summary>
 		/// The current in-character date.
 		/// </summary>
-		public static DateTime IcDate => new DateTime(DateTime.Now.Year + 442,
+		public static DateTime IcDate => new DateTime(DateTime.Now.Year + 184,
 			DateTime.Now.Month,
 			DateTime.Now.Day);
 	}
